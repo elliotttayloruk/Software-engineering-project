@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminDashStyle.css" type="text/css"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    <script src= "wp.js" defer></script>
+
+    <title>DashBoard</title>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="/Admin">Home</a></li>
+        <li><a href="/Car-Parks">Car Parks</a></li>
+        <li><a href="/User-Management">Users</a></li>
+        <li><a href="/">Logout</a></li>
+    </ul>
+</nav>
+<main>
+
+    <div id="titleBox"><h1>User Management</h1></div>
+    <h2> Currently Registered Users</h2>
+
+    <div id = "textFill"></div>
+
+
+<div id = "register">
+    <button class ="button" id="refreshFunctionButton" onclick="refreshUsers()">Refresh Users</button><br><br>
+    <button class ="button"><a href="/User-Management/remove"> Remove User </a></button><br><br><br>
+
+    <a href="/Admin"> Back </a>
+</div>
+
+</main>

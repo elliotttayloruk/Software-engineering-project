@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script src= "wp.js" defer></script>
+    <title>Remove User</title>
+</head>
+
+<body>
+<nav>
+    <ul>
+
+        <li><a href="/Admin">Home</a></li>
+        <li><a href="/Car-Parks">Car Parks</a></li>
+        <li><a href="/User-Management">Users</a></li>
+        <li><a href="/">Logout</a></li>
+
+    </ul>
+</nav>
+<main>
+
+    <div class="myContainer">
+
+        <form action="/User-Management/remove" >
+
+            <h3>Remove User</h3>
+            <p>Required information is marked with an asterisk (*)</p><br>
+            <div class="cool">
+                <label for="name">Name of User:*</label>
+                <input required type="text" class="input" name ="name" id="name" accesskey="N" placeholder="Enter the Name of Car Park" /><br>
+
+
+            </div>
+
+            <input type= "button" class="button" value="Submit Information" onclick="removeUser();"><br>
+            <input type="reset" class= "button" value="Reset Form"><br>
+            <button class = "button" id="refreshFunctionButton" onclick="refreshUsers()">Current Users</button><br>
+            <br><a class="hyper" href="/User-Management"> Back to user management</a><br>
+            
+        </form><br>
+
+    </div>
+    <div id = "textFill"></div>
+    
+</main>
+</body>
+</html>
